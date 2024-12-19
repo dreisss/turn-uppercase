@@ -1,6 +1,6 @@
 [package]
 name = "turn-uppercase"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Davi Reis <dreisss.dev@gmail.com>"]
 edition = "2021"
 description = "Small command to uppercase text in command line and copy to clipboard"
