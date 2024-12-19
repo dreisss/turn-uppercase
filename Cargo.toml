@@ -1,9 +1,15 @@
 [package]
 name = "turn-uppercase"
 version = "0.1.0"
+authors = ["Davi Reis <dreisss.dev@gmail.com>"]
 edition = "2021"
+description = "Small command to uppercase text in command line and copy to clipboard"
+licence = "MIT"
+repository = "https://github.com/dreisss/turn-uppercase"
+documentation= "https://github.com/dreisss/turn-uppercase"
 
 [[bin]]
 name = "upper"
 
 [dependencies]
+clipboard = "0.5.0"
