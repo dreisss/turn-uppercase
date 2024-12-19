@@ -8,7 +8,12 @@ fn main() {
     let mut input: Vec<String> = args().collect();
     input.remove(0);
 
-    let output = input.join(" ").to_uppercase();
+    let output: String = if input.is_empty() {
+        ctx.get_contents().unwrap().to_uppercase()
+    } else {
+        input.join(" ").to_uppercase()
+    };
+
     println!("{}", output);
     ctx.set_contents(output).unwrap();
 }
